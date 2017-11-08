@@ -52,115 +52,94 @@
                 <h3 class="uppercase">Menu</h3>
             </li>
 
-            <li class="nav-item <? if(in_array($page, ['add_machine', 'add_class', 'add_component'])) {echo 'active';}?>">
+            <li class="nav-item <? if(in_array($page, ['barge_live', 'barge_info', 'barge_diagnostic'])) {echo 'active';}?>">
                 <a href="javascript:;" class="nav-link nav-toggle ">
                     <!-- <i class="icon-diamond"></i> -->
-                    <span class="title">Setup</span>
+                    <span class="title">Barge Details</span>
                     <span class="arrow"></span>
                 </a>
                 <ul class="sub-menu">
-                    <li class="nav-item <? if($page === 'add_machine') {echo 'active';}?>">
-                        <a href="index.php?page=add_machine" class="nav-link ">
-                            <span class="title">Add New Machine</span>
+                    <li class="nav-item <? if($page === 'barge_live') {echo 'active';}?>">
+                        <a href="index.php?page=barge_live" class="nav-link ">
+                            <span class="title">Barge Live Data</span>
                         </a>
                     </li>
-                    <li class="nav-item <? if($page === 'add_class') {echo 'active';}?>">
-                        <a href="index.php?page=add_class" class="nav-link ">
-                            <span class="title">Add Component Class</span>
+                    <li class="nav-item <? if($page === 'barge_info') {echo 'active';}?>">
+                        <a href="index.php?page=barge_info" class="nav-link ">
+                            <span class="title">Barge Information</span>
                         </a>
                     </li>
-                    <li class="nav-item <? if($page === 'add_component') {echo 'active';}?>">
-                        <a href="index.php?page=add_component" class="nav-link ">
-                            <span class="title">Add New Component</span>
+                    <li class="nav-item <? if($page === 'barge_diagnostic') {echo 'active';}?>">
+                        <a href="index.php?page=barge_diagnostic" class="nav-link ">
+                            <span class="title">Barge Diagnostic</span>
                         </a>
                     </li>
                 </ul>
             </li>
 
-            <li class="nav-item <? if(in_array($page, ['hour_log_entry', 'component_fitting', 'component_unfitting'])) {echo 'active';}?>">
+            <li class="nav-item <? if(in_array($page, ['lut', 'daq', 'live_stream'])) {echo 'active';}?>">
                 <a href="javascript:;" class="nav-link nav-toggle">
                     <!-- <i class="icon-puzzle"></i> -->
-                    <span class="title">Entry</span>
+                    <span class="title">Data</span>
                     <span class="arrow"></span>
                 </a>
                 <ul class="sub-menu">
-                    <li class="nav-item <? if($page === 'hour_log_entry') {echo 'active';}?>">
-                        <a href="index.php?page=hour_log_entry" class="nav-link ">
-                            <span class="title">Hour Log Entry</span>
+                    <li class="nav-item <? if($page === 'lut') {echo 'active';}?>">
+                        <a href="index.php?page=lut" class="nav-link ">
+                            <span class="title">LUTs</span>
                         </a>
                     </li>
-                    <li class="nav-item <? if($page === 'down_time') {echo 'active';}?>">
-                        <a href="index.php?page=down_time" class="nav-link ">
-                            <span class="title">Machine Down Time</span>
+                    <li class="nav-item <? if($page === 'daq') {echo 'active';}?>">
+                        <a href="index.php?page=daq" class="nav-link ">
+                            <span class="title">All Data (DAQ)</span>
                         </a>
                     </li>
-                    <li class="nav-item <? if($page === 'component_fitting') {echo 'active';}?>">
-                        <a href="index.php?page=component_fitting" class="nav-link ">
-                            <span class="title">Component Fitting</span>
+                    <li class="nav-item <? if($page === 'live_stream') {echo 'active';}?>">
+                        <a href="index.php?page=live_stream" class="nav-link ">
+                            <span class="title">Live Stream</span>
                             <!-- <span class="badge badge-danger">2</span> -->
                         </a>
                     </li>
-                    <li class="nav-item <? if($page === 'component_unfitting') {echo 'active';}?>">
-                        <a href="index.php?page=component_unfitting" class="nav-link ">
-                            <span class="title">Component Unfitting</span>
+                </ul>
+            </li>
+
+            <li class="nav-item <? if($page === 'map') {echo 'active';}?>">
+                <a href="index.php?page=map" class="nav-link">
+                    <!-- <i class="icon-settings"></i> -->
+                    <span class="title">Map</span>
+                </a>
+            </li>
+
+            <li class="nav-item <? if(in_array($page, ['config', 'draft_cali', 'bin_cali'])) {echo 'active';}?>">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-settings"></i>
+                    <span class="title">Settings</span>
+                    <span class="arrow"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item <? if($page === 'config') {echo 'active';}?>">
+                        <a href="index.php?page=config" class="nav-link ">
+                            <span class="title">Configuration</span>
+                        </a>
+                    </li>
+                    <li class="nav-item <? if($page === 'draft_cali') {echo 'active';}?>">
+                        <a href="index.php?page=draft_cali" class="nav-link ">
+                            <span class="title">Draft Calibration</span>
+                        </a>
+                    </li>
+                    <li class="nav-item <? if($page === 'bin_cali' && empty($status)) {echo 'active';}?>">
+                        <a href="index.php?page=bin_cali" class="nav-link ">
+                            <span class="title">Bin Calibration</span>
                         </a>
                     </li>
                 </ul>
             </li>
 
-            <li class="nav-item <? if(in_array($page, ['list_machine', 'list_class', 'list_component', 'list_hour_log'])) {echo 'active';}?>">
-                <a href="javascript:;" class="nav-link nav-toggle">
+            <li class="nav-item <? if($page === 'debug_info') {echo 'active';}?>">
+                <a href="index.php?page=debug_info" class="nav-link">
                     <!-- <i class="icon-settings"></i> -->
-                    <span class="title">List & Search</span>
-                    <span class="arrow"></span>
+                    <span class="title">Debug Information</span>
                 </a>
-                <ul class="sub-menu">
-                    <li class="nav-item <? if($page === 'list_machine') {echo 'active';}?>">
-                        <a href="index.php?page=list_machine" class="nav-link ">
-                            <span class="title">Machine</span>
-                        </a>
-                    </li>
-                    <li class="nav-item <? if($page === 'list_class') {echo 'active';}?>">
-                        <a href="index.php?page=list_class" class="nav-link ">
-                            <span class="title">Component Class</span>
-                        </a>
-                    </li>
-                    <li class="nav-item <? if($page === 'list_component' && empty($status)) {echo 'active';}?>">
-                        <a href="index.php?page=list_component" class="nav-link ">
-                            <span class="title">All Components</span>
-                        </a>
-                    </li>
-                    <li class="nav-item <? if($page === 'list_component' && $status === 'active') {echo 'active';}?>">
-                        <a href="index.php?page=list_component&status=active" class="nav-link ">
-                            <span class="title">Active Components</span>
-                        </a>
-                    </li>
-                    <li class="nav-item <? if($page === 'list_component' && $status === 'expired') {echo 'active';}?>">
-                        <a href="index.php?page=list_component&status=expired" class="nav-link ">
-                            <span class="title">Expired Components</span>
-                        </a>
-                    </li>
-                    <li class="nav-item <? if($page === 'list_component' && $status === 'expiring') {echo 'active';}?>">
-                        <a href="index.php?page=list_component&status=expiring" class="nav-link ">
-                            <span class="title">Expiring Components</span>
-                        </a>
-                    </li>
-                    <li class="nav-item <? if($page === 'list_component' && $status === 'unfitted') {echo 'active';}?>">
-                        <a href="index.php?page=list_component&status=unfitted" class="nav-link ">
-                            <span class="title">Unfitted Components</span>
-                        </a>
-                    </li>
-                    <li class="nav-item <? if($page === 'list_hour_log') {echo 'active';}?>">
-                        <a href="index.php?page=list_hour_log" class="nav-link ">
-                            <span class="title">Hour Log</span>
-                        </a>
-                    </li>
-                    <li class="nav-item <? if($page === 'list_down_time') {echo 'active';}?>">
-                        <a href="index.php?page=list_down_time" class="nav-link ">
-                            <span class="title">Down Time</span>
-                        </a>
-                    </li>
-                </ul>
             </li>
         </ul>
         <!-- END SIDEBAR MENU -->
@@ -168,4 +147,4 @@
     </div>
     <!-- END SIDEBAR -->
 </div>
-<!-- END SIDEBAR -->
+<!-- END SIDEBAR

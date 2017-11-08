@@ -13,7 +13,7 @@
                 <div class="number">
                     <span data-counter="counterup" data-value="126">0</span>
                 </div>
-                <div class="desc"> Machines </div>
+                <div class="desc">  </div>
             </div>
         </a>
     </div>
@@ -25,7 +25,7 @@
             <div class="details">
                 <div class="number">
                     <span data-counter="counterup" data-value="419">0</span></div>
-                <div class="desc"> Active Components </div>
+                <div class="desc"> </div>
             </div>
         </a>
     </div>
@@ -38,7 +38,7 @@
                 <div class="number">
                     <span data-counter="counterup" data-value="174">0</span>
                 </div>
-                <div class="desc"> Unfitted Components </div>
+                <div class="desc"> </div>
             </div>
         </a>
     </div>
@@ -50,7 +50,7 @@
             <div class="details">
                 <div class="number">
                     <span data-counter="counterup" data-value="89"></span></div>
-                <div class="desc"> Expired Components </div>
+                <div class="desc"> </div>
             </div>
         </a>
     </div>
