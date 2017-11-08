@@ -10,13 +10,13 @@
     padding: 0;
   }
 
-  .rrules_main_body {
-    width: 1300px;
+  .barge_main_body {
+    /*width: 1300px;*/
     margin: 15px auto;
     margin-top: 60px;
   }
 
-  .loading_overlay {
+  .barge_loading_overlay {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -24,11 +24,39 @@
     z-index: 2000;
   }
 
-  .loading {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      z-index: 2001;
-      margin: -110px 0 0 -78px;
-    }
+  .barge_loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2001;
+    margin: -110px 0 0 -78px;
+  }
 /* Global ====================================== END */
+
+/* Sidebar ====================================== START */
+  .barge_sidebar {
+    position: fixed;
+    width: 240px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
+  .barge_sidebar_on {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+
+    .barge_sidebar_off {
+
+  }
+
+  .barge_sidebar_header {
+    height: 30px;
+    text-align: right;
+    padding-top: 8px;
+    padding-right: 14px;
+    color:#FFF;
+  }
+/* Sidebar ====================================== END */
