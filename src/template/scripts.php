@@ -5,6 +5,7 @@
 <script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
 <script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
 <!-- END CORE PLUGINS -->
+
 <!-- BEGIN PAGE LEVEL PLUGINS -->
 <script src="../assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
 <script src="../assets/global/plugins/moment.min.js" type="text/javascript"></script>
@@ -12,6 +13,7 @@
 <script src="../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
 <script src="../assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
 <script src="../assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
 <script src="../assets/global/plugins/counterup/jquery.waypoints.min.js" type="text/javascript"></script>
 <script src="../assets/global/plugins/counterup/jquery.counterup.min.js" type="text/javascript"></script>
 <script src="../assets/global/plugins/amcharts/amcharts/amcharts.js" type="text/javascript"></script>
@@ -40,13 +42,17 @@
 <script src="../assets/global/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js" type="text/javascript"></script>
 <script src="../assets/global/plugins/bootstrap-toastr/toastr.min.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL PLUGINS -->
+
 <!-- BEGIN THEME GLOBAL SCRIPTS -->
 <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
 <!-- END THEME GLOBAL SCRIPTS -->
+
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 <script src="../assets/pages/scripts/dashboard.min.js" type="text/javascript"></script>
 <script src="../assets/pages/scripts/components-date-time-pickers.min.js" type="text/javascript"></script>
+<script src="../assets/pages/scripts/portlet-draggable.min.js" type="text/javascript"></script>
 <!-- END PAGE LEVEL SCRIPTS -->
+
 <!-- BEGIN THEME LAYOUT SCRIPTS -->
 <script src="../assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
 <script src="../assets/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>

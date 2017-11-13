@@ -67,3 +67,54 @@
     width: 120px;
   }
 /* Quick Sidebar ====================================== END */
+
+/* Barge Info ====================================== START */
+  .barge_info_name {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .barge_info_name h2 {
+    font-weight: bold;
+    color: #424242;
+  }
+
+  .barge_info_name span {
+    display: block;
+  }
+
+  .portlet-sortable.light.bg-inverse {
+    border: 1px solid #c0e2ff;
+  }
+
+  .barge_info_portlet .portlet-body span {
+    display: inline-block;
+    width: 100px;
+    font-weight: normal;
+  }
+
+  .barge_info_portlet .portlet-body div {
+    font-weight: bold;
+    width: 200px;
+    margin: auto;
+  }
+
+  .portlet>.portlet-title {
+    margin-bottom: 0px;
+  }
+
+  .portlet.light .portlet-body {
+      padding-top: 0px;
+  }
+
+  @media (max-width: 991px) {
+    .portlet-sortable-empty {
+      height: 10px;
+    }
+
+    .portlet {
+      margin-bottom: 6px;
+    }
+  }
+/* Barge Info ====================================== END */

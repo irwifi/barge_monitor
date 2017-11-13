@@ -59,14 +59,14 @@
                     <span class="arrow"></span>
                 </a>
                 <ul class="sub-menu">
-                    <li class="nav-item <? if($page === 'barge_live') {echo 'active';}?>">
-                        <a href="index.php?page=barge_live" class="nav-link ">
-                            <span class="title">Barge Live Data</span>
-                        </a>
-                    </li>
                     <li class="nav-item <? if($page === 'barge_info') {echo 'active';}?>">
                         <a href="index.php?page=barge_info" class="nav-link ">
                             <span class="title">Barge Information</span>
+                        </a>
+                    </li>
+                    <li class="nav-item <? if($page === 'barge_live') {echo 'active';}?>">
+                        <a href="index.php?page=barge_live" class="nav-link ">
+                            <span class="title">Barge Live Data</span>
                         </a>
                     </li>
                     <li class="nav-item <? if($page === 'barge_diagnostic') {echo 'active';}?>">
