@@ -68,22 +68,38 @@
   }
 /* Quick Sidebar ====================================== END */
 
-/* Barge Info ====================================== START */
-  .barge_info_name {
-    display: block;
-    text-align: center;
-    margin-bottom: 30px;
+/* Header ====================================== START */
+  .page-bar .page-toolbar {
+    float: none;
+    width: 100%;
   }
 
-  .barge_info_name h2 {
-    font-weight: bold;
-    color: #424242;
+  .barge_info_name {
+    display: inline-block;
+    text-align: left;
   }
 
   .barge_info_name span {
-    display: block;
+    display: inline-block;
   }
 
+  .barge_info_name .barge_info_name_val {
+    font-weight: bold;
+    color: #424242;
+    font-size: 26px;
+  }
+
+  .barge_info_name .barge_info_id {
+    font-size: 18px;
+  }
+
+  .barge_info_name .barge_info_timestamp {
+    font-size: 13px;
+    color: #62a9d4;
+  }
+/* Header ====================================== END */
+
+/* Barge Info ====================================== START */
   .portlet-sortable.light.bg-inverse {
     border: 1px solid #c0e2ff;
   }
@@ -118,3 +134,141 @@
     }
   }
 /* Barge Info ====================================== END */
+
+/* Barge Config ====================================== START */
+  .barge_config_portlet .portlet-body {
+    width: fit-content;
+    margin: auto;
+  }
+
+  .barge_config_portlet .portlet_server, .barge_config_portlet .portlet_box {
+    display: inline-block;
+    width: 160px;
+    text-align: center;
+  }
+
+  .barge_config_portlet .portlet_header span {
+    font-weight: bold;
+  }
+
+  .barge_config_portlet .portlet_header .portlet_server {
+    margin-left: 130px;
+  }
+
+  .barge_config_portlet .portlet_group {
+    margin-top: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #b0b1b5;
+    padding-left: 30px;
+  }
+
+  .barge_config_portlet .portlet_group:last-of-type {
+    border-bottom: none;
+  }
+
+  .barge_config_portlet .portlet_group_name {
+    font-weight: bold;
+  }
+
+  .barge_config_portlet .portlet_non_btc {
+    display: none;
+  }
+
+  .barge_config_portlet .portlet_item {
+    margin-bottom: 5px;
+  }
+
+  .barge_config_portlet .portlet_item span {
+    display: inline-block;
+    width: 160px;
+  }
+
+  .barge_config_portlet .portlet_item .portlet_title {
+    width: 100px;
+  }
+
+  .barge_config_portlet input, .barge_config_portlet select {
+    width: 60px;
+    height: 25px;
+    border: 1px solid #c5c6ca;
+  }
+
+  .barge_config_portlet button {
+    border: 1px solid #c5c6ca;
+  }
+
+  .barge_config_portlet .barge_config_invert {
+    width:80px;
+  }
+
+  .input-group .form-control.touchspin {
+    width: 60px;
+  }
+
+  .barge_config_portlet .portlet_item span.input-group-btn-vertical {
+    width: 20px;
+  }
+
+  .input-group.bootstrap-touchspin {
+    display: inline-flex;
+  }
+
+  .bootstrap-touchspin-up, .bootstrap-touchspin-down {
+    display: block;
+    padding: 0 2px;
+    font-size: 8px;
+    height: 12px;
+    margin-bottom: 1px;
+  }
+
+  .bootstrap-touchspin-up i, .bootstrap-touchspin-down i {
+    margin-top: -2px;
+  }
+
+  @media (max-width: 1325px) {
+    .barge_config_portlet .portlet_item span, .barge_config_portlet .portlet_server, .barge_config_portlet .portlet_box {
+      width: 120px;
+    }
+  }
+
+  @media (min-width: 450px) {
+    .barge_config_portlet {
+      min-width: 450px;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .barge_config_portlet {
+      padding: 0;
+    }
+
+    .barge_config_portlet .portlet_header .portlet_server {
+      margin-left: 0;
+    }
+
+    .barge_config_portlet .portlet_group {
+      padding-left: 0;
+    }
+
+    .barge_config_portlet .portlet_group {
+      margin-left: 0;
+    }
+
+    .barge_config_portlet .portlet_item .portlet_title {
+      display: block;
+      text-align: center;
+      width: 100%;
+      margin-top: 10px;
+      margin-bottom: 4px;
+    }
+
+    .barge_config_portlet .portlet.light {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+
+    .barge_config_portlet .portlet.light .portlet-body {
+      margin: 0 auto;
+    }
+  }
+/* Barge Config ====================================== END */

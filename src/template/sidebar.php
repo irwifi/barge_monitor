@@ -110,15 +110,15 @@
                 </a>
             </li>
 
-            <li class="nav-item <? if(in_array($page, ['config', 'draft_cali', 'bin_cali'])) {echo 'active';}?>">
+            <li class="nav-item <? if(in_array($page, ['barge_config', 'draft_cali', 'bin_cali'])) {echo 'active';}?>">
                 <a href="javascript:;" class="nav-link nav-toggle">
                     <i class="icon-settings"></i>
                     <span class="title">Settings</span>
                     <span class="arrow"></span>
                 </a>
                 <ul class="sub-menu">
-                    <li class="nav-item <? if($page === 'config') {echo 'active';}?>">
-                        <a href="index.php?page=config" class="nav-link ">
+                    <li class="nav-item <? if($page === 'barge_config') {echo 'active';}?>">
+                        <a href="index.php?page=barge_config" class="nav-link ">
                             <span class="title">Configuration</span>
                         </a>
                     </li>

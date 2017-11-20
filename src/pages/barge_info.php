@@ -1,17 +1,8 @@
 <?
   $page_title = "Barge Information";
-
-  $barge_info = file_get_contents('http://barges.etracinc.com:8011/btc/getallbarge');
-  $barge_info = json_decode($barge_info, true)[0];
 ?>
 
 <div class="barge_brg_info">
-  <div class="barge_info_name">
-    <h2><?=$barge_info["Barge Name"]?></h2>
-    <span>Barge Id: <?=$barge_info["Barge ID"]?></span>
-    <span><?=$barge_info["Datetime"]?></span>
-  </div>
-
   <div class="row ui-sortable" id="sortable_portlets">
     <div class="col-md-4 column sortable barge_info_portlet">
         <div class="portlet portlet-sortable light bg-inverse">
